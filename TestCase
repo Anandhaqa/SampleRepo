@@ -11,3 +11,18 @@
 		//Thread.sleep(5000);
 		//BaseClass.close();
 	}
+
+@Test //(groups = {"Group1"})
+	public void aws() throws IOException, InterruptedException {
+		ExtentTest aws = extentreport.createTest("Extent_Report2");
+		//BaseClass.blaunch();
+		//BaseClass.loadurl(BaseClass.proFile("url"));
+		Page_Data pd = new Page_Data();
+		pd.aws.click();
+		aws.info("Clicked Successfully on the Link");
+		//BaseClass.takeScreenShot();
+		//System.out.println(2/0);
+		aws.pass("Link not working Properly");
+		//Thread.sleep(5000);
+		//BaseClass.close();
+	}
