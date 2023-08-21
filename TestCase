@@ -1,0 +1,13 @@
+@Test//(dependsOnMethods = {"com.fai.pageexecution.Amazon_Service.aws", "com.fai.pageexecution.Amazon_Service.career"}, alwaysRun = true)
+	public void amazon_sceience() throws IOException, InterruptedException {
+		
+		ExtentTest Science = extentreport.createTest("Extent_Report2");
+		//BaseClass.blaunch();
+		//BaseClass.loadurl(BaseClass.proFile("url"));
+		Page_Data pd = new Page_Data();
+		pd.Amazon_Science.click();
+		Science.info("Clicked Successfully on the Link");
+		Science.pass("Link working Properly");
+		//Thread.sleep(5000);
+		//BaseClass.close();
+	}
